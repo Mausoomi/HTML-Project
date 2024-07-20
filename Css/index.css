@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans", sans-serif !important;
+}
+
+* {
+    box-sizing: border-box;
+    line-height: normal;
+    font-family: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+input {
+    background-color: transparent;
+    width: 100%;
+}
+
+label[floating-label] {
+    position: relative;
+}
+
+label[floating-label] > input[floating-input] {
+    transition: all 0.25s; /* Combine transition properties */
+    outline: none;
+    border: none;
+    background: transparent;
+    max-height: 1.25em;
+    line-height: 1em;
+}
+
+label[floating-label] > input[floating-input]:focus,
+label[floating-label] > input[floating-input]:not(:placeholder-shown) {
+    &::placeholder {
+        color: transparent;
+    }
+
+    & ~ div[floating-text] {
+        opacity: 1; /* Changed to 1 from unset for consistency */
+    }
+}
+
+label[floating-label] > div[floating-text] {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: top left;
+    transition: all 0.25s;
+    opacity: 0;
+    line-height: 1em;
+    pointer-events: none;
+}
+
+label[floating-label="normal"] > input[floating-input]:focus,
+label[floating-label="normal"] > input[floating-input]:not(:placeholder-shown) {
+    & ~ div[floating-text] {
+        top: 0;
+        transform: translateY(-50%) scale(0.85); /* Use 0.85 for scale to match */
+        margin-right: -0.15em;
+        margin-left: -0.15em;
+        padding-right: 0.15em;
+        padding-left: 0.15em;
+        backdrop-filter: blur(3px); /* Use px instead of em for blur */
+    }
+}
+
+label[floating-label="contained"] > input[floating-input]:focus,
+label[floating-label="contained"] > input[floating-input]:not(:placeholder-shown) {
+    transform: translateY(0.5em);
+
+    & ~ div[floating-text] {
+        top: calc(50% - 1.25em);
+        transform: scale(0.85); /* Use 0.85 for scale to match */
+    }
+}
+
+label[floating-label="contained"] [type="checkbox"] {
+    margin: 0;
+}
+
+label[floating-label="contained"] [type="text"],
+label[floating-label="contained"] input:where(:not([type])),
+label[floating-label="contained"] [type="email"],
+label[floating-label="contained"] [type="url"],
+label[floating-label="contained"] [type="password"],
+label[floating-label="contained"] [type="number"],
+label[floating-label="contained"] [type="date"],
+label[floating-label="contained"] [type="datetime-local"],
+label[floating-label="contained"] [type="month"],
+label[floating-label="contained"] [type="search"],
+label[floating-label="contained"] [type="tel"],
+label[floating-label="contained"] [type="time"],
+label[floating-label="contained"] [type="week"],
+label[floating-label="contained"] [multiple],
+label[floating-label="contained"] textarea,
+label[floating-label="contained"] select,
+label[floating-label="contained"] button {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    font-size: inherit; /* Use inherit for consistency */
+    line-height: inherit; /* Use inherit for consistency */
+    color: inherit;
+}
+
+label[floating-label="contained"] input:focus-visible,
+label[floating-label="contained"] [multiple]:focus-visible,
+label[floating-label="contained"] textarea:focus-visible,
+label[floating-label="contained"] select:focus-visible {
+    outline: none;
+}

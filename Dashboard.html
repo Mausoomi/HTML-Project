@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- <meta charset="utf-8" /> -->
+    <title>User Dashboard Manage Your Properties and Tickets</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description"
+        content="Access your dashboard to manage properties, buy tickets, and increase your chances to win. Explore user stats, property details, and invite friends to join." />
+   -->
+
+
+    <img alt="Logo" src="https://appproject.dhiwise.com/dhiwise-logo.png?c=&v="
+        style="width: 0px; height: 0px; display: none" />
+    <link rel="stylesheet" type="text/css" href="./Css/index.css" />
+    <link rel="stylesheet" type="text/css" href="./Css/Style.css" />
+    <link rel="stylesheet" type="text/css" href="./Css/components.css" />
+    <link rel="stylesheet" type="text/css" href="./Css/Dashboard.css" />
+      <link rel="stylesheet" type="text/css" href="./Css/Home.css" />
+    <script>
+        function handleFloatingLabel(target) {
+            const input = target.querySelector("[floating-input]");
+            const label = target.querySelector("[floating-text]");
+            let timer;
+            let requestId;
+            function fixoffset() {
+                if (timer) clearTimeout(timer);
+                timer = setTimeout(() => {
+                    if (requestId) cancelAnimationFrame(requestId);
+                    requestId = requestAnimationFrame(() => {
+                        if (!input || !label) return;
+                        const computedStyle = getComputedStyle(input);
+                        label.style.left = `${input.offsetLeft + parseFloat(computedStyle.paddingInlineStart)}px;`;
+                    });
+                }, 60);
+            }
+            fixoffset();
+            input.addEventListener("focus", fixoffset);
+            window.addEventListener("resize", fixoffset);
+        }
+        document.addEventListener("DOMContentLoaded", () => {
+            const elements = (document.querySelectorAll("[floating-label]"));
+            for (const element of elements) handleFloatingLabel(element);
+        });
+    </script>
+</head>
+
+<body>
+    <div class="dashboard">
+        <div class="columnlinetwo">
+            <!-- header section -->
+            <header class="header">
+                <div class="header_column container-xs">
+                    <div class="header_top-row">
+                        <img src="public/images/img_header_logo.png" alt="Header Logo" class="header_logo" />
+                        <div class="header_menu-row">
+                            <ul class="header_menu">
+                                <li>
+                                    <a href="#">
+                                        <p class="header_menu-item ui text size-textlg">Home</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p class="header_menu-item ui text size-textlg">How it works</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p class="header_menu-item ui text size-textlg">Dashboard</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <button class="header_button ui button indigo_a400 size-lg fill round">Log Out</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_line"></div>
+            </header>
+            <div class="container-xs">
+                <!-- welcome section -->
+                <div class="dashboard_content">
+                    <div class="content_intro">
+                        <div class="intro_greeting-row">
+                            <h1 class="ui heading size-heading4x1">Hello Majed!</h1>
+                            <img src="public/images/solar_settings-outline.png" alt="Settings Image"
+                                class="greeting-row_image" />
+                        </div>
+                        <div class="content_options-row">
+                            <button class="options-row_button--villa ui button indigo_a400 size-sm fill round">
+                                Family Villa
+                            </button>
+                            <button class="options-row_button--villa ui button indigo_50_01 size-sm fill round">
+                                Single Apartment
+                            </button>
+                        </div>
+                    </div>
+                    <div class="content-row">
+                        <div class="dashboard_main">
+                            <div class="main_column">
+                                <div class="column_stack">
+                                    <img src="public/images/image (10) 2.png" alt="Profile Image" class="stack_image" />
+                                    <div class="stack_settings-row">
+                                        <div class="settings-row_view--default"></div>
+                                        <div class="settings-row_view--alternative"></div>
+                                        <div class="settings-row_view--alternative"></div>
+                                    </div>
+                                </div>
+                                <div class="main_info-row">
+                                    <div class="info-row_nested-row">
+                                        <div class="nested-row_stack--three">
+                                            <div class="user-profile">
+                                                <div class="settings-row_view--default"></div>
+                                                <div class="settings-row_view--alternative"></div>
+                                                <div class="settings-row_view--alternative"></div>
+                                            </div>
+                                            <img src="public/images/image (10) 2.png" alt="Decorative Image"
+                                                class="stack--three_image" />
+                                        </div>
+                                        <div class="nested-row_stack--six">
+                                            <img src="public/images/image (10) 2.png" alt="Placeholder Image"
+                                                class="stack--six_image" />
+                                            <div class="user-profile">
+                                                <div class="settings-row_view--default"></div>
+                                                <div class="settings-row_view--alternative"></div>
+                                                <div class="settings-row_view--alternative"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main_description-column">
+                                    <p style="margin-bottom: 0;" class="description-column_text ui_text size-textlg">
+                                        Lorem ipusm dolor set amet Lorem ipusm dolor set amet set amet dolor. Lorem
+                                        ipusm dolor set amet
+                                        Lorem ipusm dolor set amet set ame.
+                                    </p>
+                                    <div>
+                                        <div class="social-row_column">
+                                            <div class="column_linkedin-row">
+                                                <img src="public/images/Vector.png" alt="Linkedin Image"
+                                                    class="linkedin-row_image" />
+                                                <h2 style="margin: 20px 0px;"
+                                                    class="linkedin-row_text ui_heading size-headinglg">San Francisco,
+                                                    California</h2>
+                                            </div>
+                                            <div class="social-row_amenities-row">
+                                                <div>
+                                                    <img src="./public/images/bed.png" alt="bed">
+                                                    <p>5 Rooms</p>
+                                                </div>
+                                                <div>
+                                                    <img src="./public/images/room-size.png" alt="bed">
+                                                    <p>3,500 sq ft</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- value market section -->
+                        <div class="dashboard_activities">
+                            <div class="activities_column">
+                                <div class="column_list">
+                                    <div class="dashboard-row">
+                                        <div class="dashboard-row_title">
+                                            <div class="dashboard-row_title-column">
+                                                <p class="dashboard-row_title-value ui_text size-textlg">Current Villa
+                                                    Value in Market</p>
+                                                <h3 class="dashboard-row_title-cash ui_heading size-heading2x1">496,500
+                                                    USD</h3>
+                                            </div>
+                                            <img src="public/images/img_frame.png" alt="Villa Image"
+                                                class="dashboard-row_image" />
+                                        </div>
+                                    </div>
+                                    <div class="dashboard-row1">
+                                        <div class="dashboard-row_title">
+                                            <div class="dashboard-row_title-column">
+                                                <p class="dashboard-row_title-value1">Total Registered </p>
+                                                <h4 class="dashboard-row_title-cash1">196,875 users</h4>
+                                            </div>
+                                            <img src="public/images/total-register.png" alt="Villa Image"
+                                                class="dashboard-row_image1" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ticket purchase section -->
+                                <div class="activities_cta-column">
+                                    <div class="cta-column_content">
+                                        <h5 class="content_title ui_heading size-heading3x1">Buy more tickets</h5>
+                                        <h6 class="content_description ui_heading size-textmd">
+                                            Lorem ipsum dolor set amet lorem ipsum Lorem ipsum dolor set amet Lorem
+                                            ipsum dolor set amet
+                                        </h6>
+                                        <button class="content_button ui button indigo_a400 size-sm fill round">Buy
+                                            Tickets</button>
+                                    </div>
+                                    <div class="activities_tickets-row">
+                                        <div class="tickets-row_column">
+                                            <div class="column_cash-info">
+                                                <div class="cash-info_stack">
+                                                    <img src="public/images/img_image_1.png" alt="Ticket Image"
+                                                        class="stack_image--ticket" />
+                                                    <div class="stack_column">
+                                                        <h6 class="column_text--chance ui_heading size-headings">
+                                                            Take the chance<br />to change your life
+                                                        </h6>
+                                                        <h3 class="column_text--ticket ui_heading size-heading2x1">
+                                                            TICKET</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="tikit-price-container">
+                                                    <div>
+                                                        <div class="ab">
+                                                            <div class="tikit-count-button-">-</div>
+                                                            <h1>5</h1>
+                                                            <div class="tikit-count-button">+</div>
+                                                        </div>
+                                                        <div>
+                                                            <p>number tickets</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ticket-line"></div>
+                                                    <div>
+                                                        <div>
+                                                            <h1>10$</h1>
+                                                        </div>
+                                                        <div>
+                                                            <p>price</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ticket-line"></div>
+                                                    <div>
+                                                        <div>
+                                                            <h1>50$</h1>
+                                                        </div>
+                                                        <div>
+                                                            <p>total</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- invite friends section -->
+                                <div class="activities_invite-row">
+                                    <div class="invite-row_column">
+                                        <div class="column_title-row">
+                                            <h6 class="chances-invite-column">Invite friends</h6>
+                                            <button class="title-row-icon-button">
+                                                <img src="public/images/More Button.png" />
+                                            </button>
+                                        </div>
+                                        <div class="column_cards-list">
+                                            <div class="user-profile-2">
+                                                <div class="user-profile_info">
+                                                    <img src="public/images/Ellipse 75.png" alt="Profile Image"
+                                                        class="user-profile_avatar" />
+                                                    <div class="user-profile_details">
+                                                        <h6 class="user-profile_name ui_heading size-headingxs">Adela
+                                                            Parkson</h6>
+                                                        <p class="user-profile_role ui_heading size-textxs">Creative
+                                                            Director</p>
+                                                    </div>
+                                                </div>
+                                                <img src="public/images/Vector-more.png" alt="More Options" />
+                                            </div>
+                                            <div class="user-profile-3">
+                                                <div class="user-profile_info">
+                                                    <img src="public/images/Ellipse 74.png" alt="Profile Image"
+                                                        class="user-profile_avatar" />
+                                                    <div class="user-profile_details">
+                                                        <h6 class="user-profile_name ui_heading size-headingxs">
+                                                            Christian Mad</h6>
+                                                        <p class="user-profile_role ui_heading size-textxs">Product
+                                                            Designer</p>
+                                                    </div>
+                                                </div>
+                                                <img src="public/images/Vector-more.png" alt="More Options" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- winning chances section -->
+                                    <div class="invite-row_chances-column">
+                                        <h6 class="chances-invite-column">Winning Chances</h6>
+                                        <div class="chances-column_stats-row">
+                                            <div class="stats-row_chart-row">
+                                                <img src="public/images/Chart.png" alt="Chart Image"
+                                                    class="chart-row_image" />
+                                                <div class="tickets-chance-container">
+                                                    <div class="tickets-chance">
+                                                        <h1>My Tickets</h1>
+                                                        <p>52 Tickets</p>
+                                                    </div>
+                                                    <div class="tickets-chance">
+                                                        <div>
+                                                            <div class="sent_view"></div>
+                                                            <h1>My Tickets</h1>
+                                                        </div>
+                                                        <p>78%</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stackgallery">
+                <!-- gallery section -->
+                <div class="row_seven">
+                    <div class="dashboard_gallery-section container-xs">
+                        <div class="dashboard_gallery-content">
+                            <div class="dashboard_gallery-column">
+                                <h2 class="ui_heading size-heading4x1">Gallery</h2>
+                                <div class="dashboard_unsplash-row">
+                                    <div class="dashboard_unsplash-list">
+                                        <div class="user-profile-image">
+                                            <img src="public/images/img_unsplash_wgka3csfrjc.png" alt="Image"
+                                                class="user-profile-image_image" />
+                                        </div>
+                                        <div class="user-profile-image">
+                                            <img src="public/images/img_unsplash_wgka3csfrjc.png" alt="Image"
+                                                class="user-profile-image_image" />
+                                        </div>
+                                        <div class="user-profile-image">
+                                            <img src="public/images/img_unsplash_wgka3csfrjc.png" alt="Image"
+                                                class="user-profile-image_image" />
+                                        </div>
+                                        <div class="user-profile-image">
+                                            <img src="public/images/img_unsplash_wgka3csfrjc.png" alt="Image"
+                                                class="user-profile-image_image" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dashboard_details-column">
+                                <div class="dashboard_details-row">
+                                    <div class="dashboard_beds-row">
+                                        <img src="public/images/img_mdi_bed_empty.svg" alt="Bedroom Icon"
+                                            class="dashboard_bed-icon" />
+                                        <p class="dashboard_beds-text ui_text size-textxl">4
+                                            Beds</p>
+                                    </div>
+                                    <div class="dashboard_baths-row">
+                                        <img src="public/images/img_bx_bxs_bath.svg" alt="Bathroom Icon"
+                                            class="dashboard_bed-icon" />
+                                        <p class="dashboard_baths-text ui_text size-textxl">4 Baths</p>
+                                    </div>
+                                    <div class="dashboard_garage-row">
+                                        <img src="public/images/img_bx_bxs_car.svg" alt="Garage Icon"
+                                            class="dashboard_bed-icon" />
+                                        <p class="dashboard_beds-text ui_text size-textxl">1 Garage</p>
+                                    </div>
+                                </div>
+                                <p class="dashboard_description-text ui_text size-textxl">
+                                    <span class="dashboard_description-text-span">
+                                        Lorem ipusm dolor set amet Lorem ipusm dolor set amet set amet dolor. Lorem
+                                        ipusm
+                                        dolor set amet
+                                        Lorem ipusm dolor set amet set ame. Lorem ipusm dolor set amet Lorem ipusm dolor
+                                        set
+                                        amet set amet
+                                        dolor. Lorem ipusm dolor set amet Lorem ipusm dolor set amet set ame.Lorem ipusm
+                                        dolor set amet
+                                        Lorem ipusm dolor set amet set amet dolor. Lorem ipusm dolor set amet Lorem
+                                        ipusm
+                                        dolor set amet
+                                        set ame.<br /></span>
+                                    <span class="dashboard_description-text-span">
+                                        <br />Completely redone in 2021. 4 bedrooms. 2 bathrooms. 1 garahe. amazing curb
+                                        oppeal and enterain areawater vews. Tons of built-ins extras.</span> <span
+                                        class="dashboard_description-text-span-2"> &nbsp; Read More</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- newsletter signup section -->
+                
+            </div>
+        </div>
+        <footer class="footerConatiner">
+        <div class="footerBox">
+          <div class="footerDetails">
+            <p class="footerText">
+              Bringing you closer to your dream home,<br />one click at a time.
+            </p>
+            <div class="FooterForm">
+              <div class="footerInput">
+                <input placeholder="Enter your email" />
+              </div>
+              <div class="footerArrow">
+                <img src="./Images/FooterArrow.png" alt="footerImg" />
+              </div>
+            </div>
+          </div>
+          <div class="footewrBottomPart">
+            <div class="FooterLogo"><p>
+              LOGO
+            </p>
+          </div>
+          <ul class="footerItem">
+            <li>Terms</li>
+            <li>Privacy</li>
+            <li>Cookies</li>
+          </ul>
+         <ul class="sociallink">
+          <li>
+            <img src="./Images/Linkedin.png"/>
+          </li>
+          <li>
+            <img src="./Images/Facebook.png"/>
+          </li>
+          <li><img src="./Images/Twitter.png"/></li>
+         </ul>
+
+          </div>
+        </div>
+      </footer>
+    </div>
+       
+</body>
+
+</html>

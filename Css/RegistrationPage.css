@@ -1,0 +1,208 @@
+.registrationBox {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 4rem 0rem;
+}
+.rightBox {
+  background-image: url("../Images/FromBg.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 863px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.rightBox h1 {
+  font-size: 40px;
+  color: #ffff;
+  text-align: center;
+  font-weight: 900;
+  font-family: "Inter", sans-serif;
+}
+
+.rightBox p {
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  padding-top: 6px;
+}
+.FormSilderText {
+  padding-top: 20%;
+}
+.formsliderBottomtext {
+  padding-bottom: 29%;
+}
+.formInputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0;
+}
+.formInputs label {
+  font-size: 16px;
+
+  font-weight: 500;
+
+  line-height: 20px;
+
+  color: #26203b;
+}
+.formInputs input {
+  padding: 0 16px;
+  border: 1px solid #465ff166;
+  box-shadow: 0px 4px 8px 0px #465ff11a;
+  border-radius: 8px;
+  height: 48px;
+}
+
+.leftBox {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  justify-content: end;
+}
+
+.mainFormBox {
+  width: 60%;
+}
+
+.logInBtn button {
+  color: #fff;
+  font-size: 16px;
+  background: #465ff1;
+  border-radius: 8px;
+  font-size: 16px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  width: 100%;
+  margin-top: 22px;
+}
+.formsliderBottomtext p {
+  font-size: 30px;
+}
+
+/* ========================================================================================Media--1358================================================================================================================================================= */
+
+@media only screen and (max-width: 1358px) {
+  .rightBox h1 {
+    font-size: 30px;
+  }
+  .rightBox p {
+    font-size: 19px;
+  }
+  .rightBox {
+    height: 785px;
+  }
+}
+/* ========================================================================================Media--1024================================================================================================================================================= */
+
+@media only screen and (max-width: 1166px) {
+}
+@media only screen and (max-width: 1024px) {
+  .mainFormBox {
+    width: 77%;
+  }
+  .registrationBox {
+    width: 90%;
+  }
+}
+/* ========================================================================================Media--768================================================================================================================================================= */
+
+@media only screen and (max-width: 906px) {
+  .rightBox {
+    height: 613px;
+  }
+  .rightBox h1 {
+    font-size: 26px;
+  }
+  .rightBox p {
+    font-size: 15px;
+  }
+}
+
+/* ========================================================================================Media--768================================================================================================================================================= */
+
+@media only screen and (max-width: 768px) {
+  .registrationBox {
+    width: 90%;
+    flex-direction: column;
+    padding: 1rem 0rem;
+  }
+  .rightBox {
+    height: 10%;
+    width: 100%;
+  }
+  .leftBox {
+    width: 100%;
+  }
+  .mainFormBox {
+    width: 100%;
+    /* display: flex; */
+    padding: 1rem;
+  }
+  .FormSilderText {
+    padding-top: 0%;
+  }
+  .formsliderBottomtext {
+    padding-bottom: 0%;
+  }
+  .rightBox {
+    height: 276px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .rightBox h1 {
+    font-size: 30px;
+  }
+  .rightBox p {
+    font-size: 22px;
+  }
+  .formsliderBottomtext p {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+}
+/* ========================================================================================Media--480================================================================================================================================================= */
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (max-width: 624px) {
+}
+@media only screen and (max-width: 502px) {
+}
+
+@media only screen and (max-width: 480px) {
+  .rightBox h1 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .rightBox h1 {
+    font-size: 20px;
+  }
+  .rightBox p {
+    font-size: 14px;
+  }
+  .formsliderBottomtext p {
+    font-size: 12px;
+  }
+  .rightBox {
+    height: 236px;
+  }
+}
