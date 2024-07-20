@@ -18,6 +18,13 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+.mainSliderBox {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(70, 95, 241, 0.37) 0%, #465FF1 100%);
+    border-radius: 20px;
 }
 .rightBox h1 {
   font-size: 40px;
@@ -93,7 +100,11 @@
 .formsliderBottomtext p {
   font-size: 30px;
 }
-
+.carousel {
+    position: relative;
+    height: 100% !important;
+    width: 100% !important;
+}
 /* ========================================================================================Media--1358================================================================================================================================================= */
 
 @media only screen and (max-width: 1358px) {

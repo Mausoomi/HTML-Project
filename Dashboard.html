@@ -20,7 +20,7 @@
     <link rel="stylesheet" type="text/css" href="./Css/Style.css" />
     <link rel="stylesheet" type="text/css" href="./Css/components.css" />
     <link rel="stylesheet" type="text/css" href="./Css/Dashboard.css" />
-      <link rel="stylesheet" type="text/css" href="./Css/Home.css" />
+    <link rel="stylesheet" href="./Css/Home.css" />
     <script>
         function handleFloatingLabel(target) {
             const input = target.querySelector("[floating-input]");
@@ -53,7 +53,7 @@
     <div class="dashboard">
         <div class="columnlinetwo">
             <!-- header section -->
-            <header class="header">
+            <!-- <header class="header">
                 <div class="header_column container-xs">
                     <div class="header_top-row">
                         <img src="public/images/img_header_logo.png" alt="Header Logo" class="header_logo" />
@@ -80,7 +80,29 @@
                     </div>
                 </div>
                 <div class="header_line"></div>
-            </header>
+            </header> -->
+            <nav class="header" style="width: 100%;">
+                <div class="mainNavBar">
+                    <div class="leftNav">
+                        <div>
+                            <img src="./Images/logo.png" alt="logo" />
+                        </div>
+                        <p>Logo</p>
+                    </div>
+                    <div class="rigthNav">
+                        <div>
+                            <ul class="navItems">
+                                <li>Home</li>
+                                <li>How it works</li>
+                                <li>Dashboard</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="Registrationpage.html"><button class="getStart">Get started</button></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
             <div class="container-xs">
                 <!-- welcome section -->
                 <div class="dashboard_content">
@@ -316,8 +338,7 @@
                 </div>
             </div>
             <div class="stackgallery">
-                <!-- gallery section -->
-                <div class="row_seven">
+                <div>
                     <div class="dashboard_gallery-section container-xs">
                         <div class="dashboard_gallery-content">
                             <div class="dashboard_gallery-column">
@@ -325,19 +346,19 @@
                                 <div class="dashboard_unsplash-row">
                                     <div class="dashboard_unsplash-list">
                                         <div class="user-profile-image">
-                                            <img src="public/images/img_unsplash_wgka3csfrjc.png" alt="Image"
+                                            <img src="public/images/Gallary-1.png" alt="Image"
                                                 class="user-profile-image_image" />
                                         </div>
                                         <div class="user-profile-image">
-                                            <img src="public/images/img_unsplash_wgka3csfrjc.png" alt="Image"
+                                            <img src="public/images/Gallary-2.png" alt="Image"
                                                 class="user-profile-image_image" />
                                         </div>
                                         <div class="user-profile-image">
-                                            <img src="public/images/img_unsplash_wgka3csfrjc.png" alt="Image"
+                                            <img src="public/images/Gallary-3.png" alt="Image"
                                                 class="user-profile-image_image" />
                                         </div>
                                         <div class="user-profile-image">
-                                            <img src="public/images/img_unsplash_wgka3csfrjc.png" alt="Image"
+                                            <img src="public/images/Gallary-4.png" alt="Image"
                                                 class="user-profile-image_image" />
                                         </div>
                                     </div>
@@ -346,19 +367,18 @@
                             <div class="dashboard_details-column">
                                 <div class="dashboard_details-row">
                                     <div class="dashboard_beds-row">
-                                        <img src="public/images/img_mdi_bed_empty.svg" alt="Bedroom Icon"
+                                        <img src="public/images/bed-empty.png" alt="Bedroom Icon"
                                             class="dashboard_bed-icon" />
                                         <p class="dashboard_beds-text ui_text size-textxl">4
                                             Beds</p>
                                     </div>
                                     <div class="dashboard_baths-row">
-                                        <img src="public/images/img_bx_bxs_bath.svg" alt="Bathroom Icon"
+                                        <img src="public/images/bath.png" alt="Bathroom Icon"
                                             class="dashboard_bed-icon" />
                                         <p class="dashboard_baths-text ui_text size-textxl">4 Baths</p>
                                     </div>
                                     <div class="dashboard_garage-row">
-                                        <img src="public/images/img_bx_bxs_car.svg" alt="Garage Icon"
-                                            class="dashboard_bed-icon" />
+                                        <img src="public/images/car.png" alt="Garage Icon" class="dashboard_bed-icon" />
                                         <p class="dashboard_beds-text ui_text size-textxl">1 Garage</p>
                                     </div>
                                 </div>
@@ -385,50 +405,48 @@
                         </div>
                     </div>
                 </div>
-                <!-- newsletter signup section -->
-                
             </div>
-        </div>
-        <footer class="footerConatiner">
-        <div class="footerBox">
-          <div class="footerDetails">
-            <p class="footerText">
-              Bringing you closer to your dream home,<br />one click at a time.
-            </p>
-            <div class="FooterForm">
-              <div class="footerInput">
-                <input placeholder="Enter your email" />
-              </div>
-              <div class="footerArrow">
-                <img src="./Images/FooterArrow.png" alt="footerImg" />
-              </div>
-            </div>
-          </div>
-          <div class="footewrBottomPart">
-            <div class="FooterLogo"><p>
-              LOGO
-            </p>
-          </div>
-          <ul class="footerItem">
-            <li>Terms</li>
-            <li>Privacy</li>
-            <li>Cookies</li>
-          </ul>
-         <ul class="sociallink">
-          <li>
-            <img src="./Images/Linkedin.png"/>
-          </li>
-          <li>
-            <img src="./Images/Facebook.png"/>
-          </li>
-          <li><img src="./Images/Twitter.png"/></li>
-         </ul>
+            <div class="footerconatiner">
+                <footer class="">
+                    <div class="footerBox">
+                        <div class="footerDetails">
+                            <p class="footerText">
+                                Bringing you closer to your dream home,<br />one click at a time.
+                            </p>
+                            <div class="FooterForm">
+                                <div class="footerInput">
+                                    <input placeholder="Enter your email" />
+                                </div>
+                                <div class="footerArrow">
+                                    <img src="./Images/FooterArrow.png" alt="footerImg" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footewrBottomPart">
+                            <div class="FooterLogo">
+                                <p>
+                                    LOGO
+                                </p>
+                            </div>
+                            <ul class="footerItem">
+                                <li>Terms</li>
+                                <li>Privacy</li>
+                                <li>Cookies</li>
+                            </ul>
+                            <ul class="sociallink">
+                                <li>
+                                    <img src="./Images/Linkedin.png" />
+                                </li>
+                                <li>
+                                    <img src="./Images/Facebook.png" />
+                                </li>
+                                <li><img src="./Images/Twitter.png" /></li>
+                            </ul>
 
-          </div>
-        </div>
-      </footer>
-    </div>
-       
+                        </div>
+                    </div>
+                </footer>
+            </div>
 </body>
 
 </html>

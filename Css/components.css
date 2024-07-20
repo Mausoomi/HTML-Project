@@ -251,4 +251,7 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    @media only screen and (max-width: 1020px) {
+        padding: 10px;
+    }
 }
