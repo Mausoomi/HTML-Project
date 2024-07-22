@@ -31,18 +31,17 @@ footer {
   height: 43%;
 }
 a {
-    text-decoration: none;
-    
+  text-decoration: none;
 }
 
 /* =============================================================================Common tags============================================================================== */
 .mainConatiner {
   background-image: url("../Images/BgImg.png");
 
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 977px;
+  /* height: 977px; */
 }
 .mainNavBar {
   display: flex;
@@ -64,6 +63,7 @@ a {
   font-weight: 700;
   font-size: 28px;
   font-family: "DM Sans", sans-serif;
+  cursor: pointer;
 }
 .rigthNav {
   display: flex;
@@ -84,7 +84,13 @@ a {
   font-size: 18px;
   font-weight: 400;
   font-family: "DM Sans", sans-serif;
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
+.navItems li:hover {
+  transform: scale(1.05);
+}
+
 button.getStart {
   font-size: 16px;
   background: #465ff1;
@@ -93,6 +99,12 @@ button.getStart {
   border-radius: 10px;
   font-weight: 600;
   font-family: "DM Sans", sans-serif;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+button.getStart:hover {
+  transform: scale(0.95);
+  background: #344ac7;
 }
 section.banner {
   display: flex;
@@ -127,7 +139,7 @@ section.banner {
 }
 ul.cardList {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   gap: 5%;
   padding: 0 1rem;
@@ -141,6 +153,7 @@ ul.cardList {
   flex-direction: column;
   gap: 1.5rem;
   box-shadow: 0px 4px 4px 0px #00000040;
+  height: 100%;
 }
 
 .location {
@@ -188,6 +201,13 @@ button.CardBtn {
   border-radius: 8px;
   margin-top: 5px;
   font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+button.CardBtn:hover {
+  transform: scale(1.05);
+  background: #344ac7;
 }
 .imgCard {
   width: 100%;
@@ -264,6 +284,13 @@ form.formMain {
   font-weight: 600;
   font-family: "DM Sans", sans-serif;
   padding: 16px 26px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.SubmiitBtn:hover {
+  transform: scale(1.05);
+  background: #344ac7;
 }
 .leafImg {
   background-image: url("../Images/box.png");
@@ -379,11 +406,11 @@ p.footerText {
   padding: 1rem;
   border-radius: 7px 0px 0px 7px;
 }
-.footerInput input::placeholder{
+.footerInput input::placeholder {
   font-size: 14px;
   font-family: "Inter", sans-serif;
   font-family: 400;
-  color: #0A142F;
+  color: #0a142f;
 }
 .FooterForm {
   display: flex;
@@ -398,7 +425,15 @@ p.footerText {
   justify-content: center;
   padding: 1rem;
   border-radius: 0 7px 7px 0;
+  cursor: pointer;
 }
+.footerArrow img {
+  transition: transform 0.3s ease;
+}
+.footerArrow img:hover {
+  transform: scale(1.05);
+}
+
 .footewrBottomPart {
   display: flex;
   align-items: center;
@@ -416,6 +451,13 @@ ul.sociallink {
   gap: 17px;
   flex-wrap: wrap;
 }
+ul.sociallink li {
+  transition: transform 0.3s ease;
+}
+ul.sociallink li:hover {
+  transform: scale(1.10);
+  text-decoration: underline;
+}
 ul.footerItem {
   display: flex;
   align-items: center;
@@ -427,11 +469,21 @@ ul.footerItem {
   font-family: "Inter", sans-serif;
   flex-wrap: wrap;
 }
+ul.footerItem li {
+  transition: transform 0.3s ease;
+}
+ul.footerItem li:hover {
+  transform: scale(1.05);
+  text-decoration: underline;
+}
 .FooterLogo {
   font-size: 24px;
   color: #465ff1;
   background: #ffffff;
   padding: 8px 18px;
+}
+.phoneLogo {
+  display: none;
 }
 /* ========================================================================================Media--1358================================================================================================================================================= */
 
@@ -478,9 +530,10 @@ ul.footerItem {
 /* ========================================================================================Media--768================================================================================================================================================= */
 
 @media only screen and (max-width: 906px) {
-  .mainConatiner {
+  /* .mainConatiner {
+
     height: 835px;
-  }
+  } */
   li.arrowUp {
     right: 26%;
     width: 17%;
@@ -528,9 +581,9 @@ ul.footerItem {
   .ItemInfo p {
     font-size: 14px;
   }
-  .mainConatiner {
+  /* .mainConatiner {
     height: 699px;
-  }
+  } */
   .commonHd {
     font-size: 32px;
   }
@@ -608,7 +661,7 @@ ul.footerItem {
 }
 
 @media only screen and (max-width: 624px) {
-  .FooterLogo{
+  .FooterLogo {
     display: none;
   }
 }
@@ -616,17 +669,27 @@ ul.footerItem {
   .footerBox {
     background-image: url("../Images/mobileFooter.png");
   }
+  .cardBox {
+    background: #dde1f3;
+    padding: 0.7rem;
+  }
 }
 
 @media only screen and (max-width: 480px) {
-      footer {
-        height: 83%;
-    }
+  footer {
+    height: 85%;
+  }
+  .topHd {
+    font-size: 23px;
+  }
   button.getStart {
     padding: 10px 12px 10px 12px;
     background: #dde1f3;
     font-size: 16px;
     color: #465ff1;
+  }
+  button.getStart:hover {
+    background: #c4c4c7;
   }
   .InputFormMAin input::placeholder {
     font-size: 18px;
@@ -644,16 +707,22 @@ ul.footerItem {
     width: 301px;
   }
   .paraTop {
-    padding: 1rem;
+    padding: 2rem 2rem;
   }
-  .mainConatiner {
+  .phoneLogo {
+    display: block;
+  }
+  /* .mainConatiner {
     height: 448px;
-  }
+  } */
   .LocationImg {
     width: 9px;
   }
   .LocationImg img {
     width: 10px;
+  }
+  .cardBox {
+    padding: 0.5rem;
   }
 
   .ItemInfoImg {
@@ -677,8 +746,8 @@ ul.footerItem {
   button.CardBtn {
     font-size: 13px;
   }
-  .cardBox {
-    padding: 1rem 0.5rem;
+  .webLogo {
+    display: none;
   }
 
   .SubmiitBtn {
@@ -693,10 +762,9 @@ ul.footerItem {
     font-size: 14px;
   }
   p.footerText {
-   
     font-size: 15px;
   }
-   .InputFormMAin input::placeholder {
+  .InputFormMAin input::placeholder {
     font-size: 15px;
   }
 }
@@ -704,5 +772,32 @@ ul.footerItem {
 @media only screen and (max-width: 450px) {
   .InputFormMAin input {
     width: 242px;
+  }
+  .footewrBottomPart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0rem;
+    margin: 0rem 3%;
+  }
+  ul.footerItem {
+    gap: 14px;
+  }
+  ul.sociallink {
+    gap: 14px;
+  }
+}
+
+@media only screen and (max-width: 342px) {
+  .footewrBottomPart {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .InputFormMAin input {
+    width: 204px;
+  }
+  .paraTop p {
+    font-size: 12px;
+    width: 219px;
   }
 }

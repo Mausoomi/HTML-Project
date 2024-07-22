@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+   
+   
     <title>My First Webpage</title>
     <link rel="stylesheet" href="./Css/Home.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,23 +25,19 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      document.getElementById('howItWorksLink').addEventListener('click', function() {
-        document.getElementById('IdhowItWorks').scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-    </script>
   </head>
   <body>
-    <div class="mainConatiner">
-      <nav>
+    <div>   
+      <div class="topMostSection">
+          <div class="mainConatiner">
+         <nav>
         <div class="mainNavBar">
           <div class="leftNav">
-            <div>
+            <div class="webLogo">
               <img src="./Images/logo.png" alt="logo" />
+            </div>
+            <div class="phoneLogo">
+              <img src="./Images/PhoneLogo.png" alt="phnLogo"/>
             </div>
             <p>Logo</p>
           </div>
@@ -48,14 +45,12 @@
             <div>
               <ul class="navItems">
                 <li>Home</li>
-                <li id="howItWorksLink">How it works</li>
-                <a href="Dashboard.html"> <li>Dashboard</li></a>
+                <li>How it works</li>
+               <a href="Dashboard.html"><li>Dashboard</li></a> 
               </ul>
             </div>
             <div>
-              <a href="Registrationpage.html"
-                ><button class="getStart">Get started</button></a
-              >
+              <a href="Registrationpage.html"><button class="getStart">Get started</button></button></a>
             </div>
           </div>
         </div>
@@ -153,7 +148,9 @@
           </ul>
         </div>
       </section>
-
+    </div>
+      </div> 
+    
       <section class="EmailForm">
         <div class="GetHelpform">
           <div class="getHelpHd">
@@ -176,7 +173,7 @@
         </div>
       </section>
 
-      <section class="HowItWorks" id="IdhowItWorks">
+      <section class="HowItWorks">
         <div>
           <div>
             <h1 class="commonHd">How It Works</h1>
@@ -255,24 +252,30 @@
             </div>
           </div>
           <div class="footewrBottomPart">
-            <div class="FooterLogo"><p>LOGO</p></div>
-            <ul class="footerItem">
-              <li>Terms</li>
-              <li>Privacy</li>
-              <li>Cookies</li>
-            </ul>
-            <ul class="sociallink">
-              <li>
-                <img src="./Images/Linkedin.png" />
-              </li>
-              <li>
-                <img src="./Images/Facebook.png" />
-              </li>
-              <li><img src="./Images/Twitter.png" /></li>
-            </ul>
+            <div class="FooterLogo"><p>
+              LOGO
+            </p>
+          </div>
+          <ul class="footerItem">
+            <li>Terms</li>
+            <li>Privacy</li>
+            <li>Cookies</li>
+          </ul>
+         <ul class="sociallink">
+          <li>
+            <img src="./Images/Linkedin.png"/>
+          </li>
+          <li>
+            <img src="./Images/Facebook.png"/>
+          </li>
+          <li><img src="./Images/Twitter.png"/></li>
+         </ul>
+
           </div>
         </div>
       </footer>
     </div>
+
+
   </body>
 </html>

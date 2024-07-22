@@ -21,10 +21,10 @@
   position: relative;
 }
 .mainSliderBox {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, rgba(70, 95, 241, 0.37) 0%, #465FF1 100%);
-    border-radius: 20px;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(70, 95, 241, 0.37) 0%, #465ff1 100%);
+  border-radius: 20px;
 }
 .rightBox h1 {
   font-size: 40px;
@@ -32,6 +32,7 @@
   text-align: center;
   font-weight: 900;
   font-family: "Inter", sans-serif;
+  margin: 0;
 }
 
 .rightBox p {
@@ -96,15 +97,32 @@
   font-weight: 700;
   width: 100%;
   margin-top: 22px;
+ cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logInBtn button:hover {
+  transform: scale(1.05);
+  background: #344ac7;
 }
 .formsliderBottomtext p {
   font-size: 30px;
 }
 .carousel {
-    position: relative;
-    height: 100% !important;
-    width: 100% !important;
+  position: relative;
+  height: 100% !important;
+  width: 100% !important;
 }
+.carousel-inner > .active,
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  /* display: block; */
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 420px !important;
+  /* height: 516px; */
+}
+/*  */
 /* ========================================================================================Media--1358================================================================================================================================================= */
 
 @media only screen and (max-width: 1358px) {
@@ -142,6 +160,12 @@
   .rightBox p {
     font-size: 15px;
   }
+  .carousel-inner > .active,
+  .carousel-inner > .next,
+  .carousel-inner > .prev {
+    gap: 300px !important;
+    /* height: 516px; */
+  }
 }
 
 /* ========================================================================================Media--768================================================================================================================================================= */
@@ -165,7 +189,7 @@
     padding: 1rem;
   }
   .FormSilderText {
-    padding-top: 0%;
+    padding-top: 4%;
   }
   .formsliderBottomtext {
     padding-bottom: 0%;
@@ -185,6 +209,15 @@
   .formsliderBottomtext p {
     font-size: 22px;
   }
+  .carousel-inner > .active,
+  .carousel-inner > .next,
+  .carousel-inner > .prev {
+    gap: 20px !important;
+    /* height: 516px; */
+  }
+  .carousel-indicators {
+    display: none !important;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -194,6 +227,9 @@
 }
 
 @media only screen and (max-width: 624px) {
+      .FormSilderText {
+        padding-top: 8%;
+    }
 }
 @media only screen and (max-width: 502px) {
 }
@@ -201,8 +237,16 @@
 @media only screen and (max-width: 480px) {
   .rightBox h1 {
     font-size: 30px;
+    margin: 0 !important;
+  }    .FormSilderText {
+        padding-top: 15%;
+    }
+      .carousel-inner > .prev {
+    gap: 30px !important;
+    /* height: 516px; */
   }
 }
+
 @media only screen and (max-width: 400px) {
   .rightBox h1 {
     font-size: 20px;
