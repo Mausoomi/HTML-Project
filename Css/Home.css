@@ -28,7 +28,7 @@ img {
   object-fit: cover;
 }
 footer {
-  height: 43%;
+    height: 423px;
 }
 a {
   text-decoration: none;
@@ -590,9 +590,9 @@ ul.footerItem li:hover {
   .InputFormMAin input {
     width: 365px;
   }
-  footer {
-    height: 57%;
-  }
+    footer {
+        height: 499px;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -676,9 +676,9 @@ ul.footerItem li:hover {
 }
 
 @media only screen and (max-width: 480px) {
-  footer {
+  /* footer {
     height: 85%;
-  }
+  } */
   .topHd {
     font-size: 23px;
   }
