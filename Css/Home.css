@@ -29,6 +29,7 @@ img {
 }
 footer {
     height: 423px;
+    width: 100%;
 }
 a {
   text-decoration: none;
@@ -590,9 +591,9 @@ ul.footerItem li:hover {
   .InputFormMAin input {
     width: 365px;
   }
-    footer {
+    /* footer {
         height: 499px;
-    }
+    } */
 }
 
 @media only screen and (max-width: 767px) {
