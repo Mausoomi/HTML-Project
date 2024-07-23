@@ -703,6 +703,9 @@ ul.footerItem li:hover {
   .leftNav p {
     color: #ffffff;
   }
+  #LogoDash{
+color: #465FF1;
+  }
   .paraTop p {
     font-size: 12px;
     width: 301px;
