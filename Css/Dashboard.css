@@ -740,10 +740,11 @@
 
   @media only screen and (max-width: 454px) {
     width: 170px;
+    font-size: 15px;
  
   }
     @media only screen and (max-width: 600px) {
-
+   font-size: 15px;
   }
 }
 .CardBtnDashTwo{
@@ -766,7 +767,7 @@
     width: 170px;
   }
     @media only screen and (max-width: 600px) {
-  
+     font-size: 15px;
   }
 }
 
@@ -1637,9 +1638,9 @@
   .content_button {
     max-width: 100%;
   }
-  /* .btnsTop{
-    flex-direction: column;
-} */
+  .btnsTop{
+  gap: 10px;
+}
 }
 
 @media only screen and (max-width: 550px) {
@@ -1647,8 +1648,9 @@
     flex-direction: column;
   }
 }
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 365px){
    .btnsTop{
     flex-direction: column;
+    gap: 8px;
 }
 }
