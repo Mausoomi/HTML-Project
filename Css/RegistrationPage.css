@@ -1,3 +1,8 @@
+.registrationform{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
 .registrationBox {
   display: flex;
   align-items: center;
@@ -5,6 +10,8 @@
   margin: 0 auto;
   justify-content: space-between;
   padding: 4rem 0rem;
+   height: 100vh; /* 100% of the viewport height */
+            overflow: hidden; 
 }
 .rightBox {
   background-image: url("../Images/FromBg.jpeg");
@@ -12,7 +19,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 50%;
-  height: 863px;
+  max-height: 863px;
+  height: 100%;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -44,11 +52,11 @@
   padding-top: 6px;
 }
 .FormSilderText {
-  padding-top: 20%;
+  padding-top: 10%;
 }
-.formsliderBottomtext {
+/* .formsliderBottomtext {
   padding-bottom: 29%;
-}
+} */
 .formInputs {
   display: flex;
   flex-direction: column;
@@ -117,10 +125,15 @@
 .carousel-inner > .next,
 .carousel-inner > .prev {
   /* display: block; */
+  height: 100%;
   display: flex !important;
   flex-direction: column !important;
-  gap: 420px !important;
+  justify-content: space-between;
+  /* gap: 420px !important; */
   /* height: 516px; */
+}
+.carousel-inner{
+  height: 80% !important;
 }
 /*  */
 /* ========================================================================================Media--1358================================================================================================================================================= */
@@ -132,9 +145,9 @@
   .rightBox p {
     font-size: 19px;
   }
-  .rightBox {
+  /* .rightBox {
     height: 785px;
-  }
+  } */
 }
 /* ========================================================================================Media--1024================================================================================================================================================= */
 
@@ -146,26 +159,26 @@
   }
   .registrationBox {
     width: 90%;
+   
   }
 }
 /* ========================================================================================Media--768================================================================================================================================================= */
 
 @media only screen and (max-width: 906px) {
-  .rightBox {
+
+  /* .rightBox {
     height: 613px;
-  }
+  } */
   .rightBox h1 {
     font-size: 26px;
   }
   .rightBox p {
     font-size: 15px;
   }
-  .carousel-inner > .active,
-  .carousel-inner > .next,
-  .carousel-inner > .prev {
-    gap: 300px !important;
-    /* height: 516px; */
-  }
+  /* .FormSilderText {
+    padding-top: 22%;
+} */
+
 }
 
 /* ========================================================================================Media--768================================================================================================================================================= */
@@ -176,10 +189,17 @@
     flex-direction: column;
     padding: 1rem 0rem;
   }
+    .registrationBox {
+ overflow: scroll;
+   }
+   .registrationBox {
+height: auto;
+  }
   .rightBox {
-    height: 10%;
+   
     width: 100%;
   }
+
   .leftBox {
     width: 100%;
   }
@@ -189,11 +209,11 @@
     padding: 1rem;
   }
   .FormSilderText {
-    padding-top: 4%;
-  }
-  .formsliderBottomtext {
+    padding-top: 7%;
+}
+  /* .formsliderBottomtext {
     padding-bottom: 0%;
-  }
+  } */
   .rightBox {
     height: 276px;
     width: 100%;
@@ -238,8 +258,10 @@
   .rightBox h1 {
     font-size: 30px;
     margin: 0 !important;
-  }    .FormSilderText {
-        padding-top: 15%;
+  }
+      .FormSilderText {
+
+        padding-top: 10%;
     }
       .carousel-inner > .prev {
     gap: 30px !important;

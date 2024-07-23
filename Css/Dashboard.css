@@ -747,6 +747,9 @@
    font-size: 15px;
   }
 }
+.CardBtnDash:hover {
+  transform: scale(1.05);
+}
 .CardBtnDashTwo{
     background:#DDE1F3;
     width: 317px;
@@ -769,6 +772,9 @@
     @media only screen and (max-width: 600px) {
      font-size: 15px;
   }
+}
+.CardBtnDashTwo:hover{
+   transform: scale(1.05);
 }
 
 
