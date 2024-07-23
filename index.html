@@ -25,6 +25,15 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+     <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('howItWorksLink').addEventListener('click', function() {
+        document.getElementById('IdhowItWorks').scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+    </script>
   </head>
   <body>
     <div>   
@@ -45,7 +54,7 @@
             <div>
               <ul class="navItems">
                 <li>Home</li>
-                <li>How it works</li>
+                 <li id="howItWorksLink">How it works</li>
                <a href="Dashboard.html"><li>Dashboard</li></a> 
               </ul>
             </div>
@@ -173,7 +182,7 @@
         </div>
       </section>
 
-      <section class="HowItWorks">
+      <section class="HowItWorks" id="IdhowItWorks">
         <div>
           <div>
             <h1 class="commonHd">How It Works</h1>

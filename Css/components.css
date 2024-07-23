@@ -1,259 +1,280 @@
 .ui.button.round {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 .ui.button.size-lg {
-    height: 54px;
-    padding-left: 24px;
-    padding-right: 24px;
-    font-size: 16px;
+  height: 54px;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-size: 16px;
 }
 
 .ui.button.size-xs {
-    height: 36px;
-    padding-left: 6px;
-    padding-right: 6px;
+  height: 36px;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 .ui.button.size-md {
-    height: 50px;
-    padding-left: 14px;
-    padding-right: 14px;
+  height: 50px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 
 .ui.button.size-sm {
-    height: 40px;
-    padding-left: 34px;
-    padding-right: 34px;
-    font-size: 18px;
+  height: 40px;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  font-size: 18px;
+  @media only screen and (max-width: 768px) {
+    font-size: 15px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }
 
 .ui.button.fill.gray_50 {
-    background-color: #eff0f6;
+  background-color: #eff0f6;
 }
 
 .ui.button.fill.indigo_50_01 {
-    background-color: #dde1f3;
-    color: #ffffff;
+  background-color: #dde1f3;
+  color: #ffffff;
 }
 
 .ui.button.fill.indigo_a400 {
-    background-color: #465ff1;
-    color: #ffffff;
+  background-color: #465ff1;
+  color: #ffffff;
 }
 
 .ui.button {
-    text-align: center;
-    display: flex;
-    cursor: pointer;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
+  text-align: center;
+  display: flex;
+  cursor: pointer;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
 }
 
 .ui.floatingtextfield.square {
-    border-radius: 0px;
+  border-radius: 0px;
 }
 
 .ui.floatingtextfield.size-xs {
-    height: 38px;
-    font-size: 18px;
+  height: 38px;
+  font-size: 18px;
 }
 
 .ui.floatingtextfield {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: text;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: text;
+  gap: 8px;
 }
 
 .ui.text.size-textlg {
-    font-size: 18px;
-    font-weight: 400;
-    font-style: bold;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: bold;
 
-    
-    @media only screen and (max-width: 1440px) {
-        font-size: 15px;
-    }
+  @media only screen and (max-width: 1440px) {
+    font-size: 15px;
+  }
 }
 
 .ui.text.size-textxl {
-    font-size: 20px;
-    font-weight: 400;
-    font-style: normal;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
 
-    @media only screen and (max-width: 1440px) {
-        font-size: 17px;
-    }
+  @media only screen and (max-width: 1440px) {
+    font-size: 17px;
+  }
 }
 
 .ui.text {
-    color: #000000;
+  color: #000000;
 }
 
 .ui.heading.size-textxs {
-    font-size: 12px;
-    font-weight: 500;
-    font-style: bold;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: bold;
 }
 
 .ui.heading.size-texts {
-    font-size: 14px;
-    font-weight: 500;
-    font-style: bold;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: bold;
 }
 
 .ui.heading.size-textmd {
-    font-size: 16px;
-    font-weight: 500;
-    font-style: bold;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: bold;
 
-    @media only screen and (max-width: 1440px) {
-        font-size: 13px;
-    }
+  @media only screen and (max-width: 1440px) {
+    font-size: 13px;
+  }
+}
+p.description-column_text.ui_text.size-textlg {
+    font-size: 18px;
+    font-weight: 300;
+      font-family: "Inter", sans-serif;
+      margin-top: 20px;
+        @media only screen and (max-width: 430px) {
+    font-size: 12px;
+  }
 }
 
 .ui.heading.size-headingxs {
-    font-size: 16px;
-    font-weight: 700;
-    font-style: bold;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: bold;
 
-    @media only screen and (max-width: 1440px) {
-        font-size: 13px;
-    }
+  @media only screen and (max-width: 1440px) {
+    font-size: 13px;
+  }
 }
 
 .ui.heading.size-headings {
-    font-size: 17px;
-    font-weight: 700;
-    font-style: bold;
+  font-size: 17px;
+  font-weight: 700;
+  font-style: bold;
 
-    @media only screen and (max-width: 1440px) {
-        font-size: 14px;
-    }
+  @media only screen and (max-width: 1440px) {
+    font-size: 14px;
+  }
 }
 
 .ui.heading.size-headingmd {
-    font-size: 18px;
-    font-weight: 700;
-    font-style: bold;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: bold;
 
-    @media only screen and (max-width: 1440px) {
-        font-size: 15px;
-    }
+  @media only screen and (max-width: 1440px) {
+    font-size: 15px;
+  }
 }
 
 .ui.heading.size-headinglg {
-    font-size: 20px;
-    font-weight: 700;
-    font-style: bold;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: bold;
 
-    @media only screen and (max-width: 1440px) {
-        font-size: 17px;
-    }
+  @media only screen and (max-width: 1440px) {
+    font-size: 17px;
+  }
 }
 
 .ui.heading.size-headingxl {
-    font-size: 26px;
-    font-weight: 700;
-    font-style: bold;
+  font-size: 26px;
+  font-weight: 700;
+  font-style: bold;
 
-    @media only screen and (max-width: 1440px) {
-        font-size: 22px;
-    }
+  @media only screen and (max-width: 1440px) {
+    font-size: 22px;
+  }
 
-    @media only screen and (max-width: 1050px) {
-        font-size: 24px;
-    }
+  @media only screen and (max-width: 1050px) {
+    font-size: 24px;
+  }
 
-    @media only screen and (max-width: 550px) {
-        font-size: 22px;
-    }
+  @media only screen and (max-width: 550px) {
+    font-size: 22px;
+  }
 }
 
 .ui.heading.size-heading2xl {
-    font-size: 30px;
-    font-weight: 900;
-    font-style: bold;
+  font-size: 30px;
+  font-weight: 900;
+  font-style: bold;
 
-    @media only screen and (max-width: 1440px) {
-        font-size: 25px;
-    }
+  @media only screen and (max-width: 1440px) {
+    font-size: 25px;
+  }
 
-    @media only screen and (max-width: 1050px) {
-        font-size: 28px;
-    }
+  @media only screen and (max-width: 1050px) {
+    font-size: 28px;
+  }
 
-    @media only screen and (max-width: 550px) {
-        font-size: 26px;
-    }
+  @media only screen and (max-width: 550px) {
+    font-size: 26px;
+  }
 }
 
 .ui.heading.size-heading3xl {
-    font-size: 34px;
-    font-weight: 700;
-    font-style: bold;
+  font-size: 34px;
+  font-weight: 700;
+  font-style: bold;
 
-    @media only screen and (max-width: 1440px) {
-        font-size: 28px;
-    }
+  @media only screen and (max-width: 1440px) {
+    font-size: 28px;
+  }
 
-    @media only screen and (max-width: 1050px) {
-        font-size: 32px;
-    }
+  @media only screen and (max-width: 1050px) {
+    font-size: 32px;
+  }
 
-    @media only screen and (max-width: 550px) {
-        font-size: 30px;
-    }
+  @media only screen and (max-width: 550px) {
+    font-size: 30px;
+  }
 }
 
 .ui.heading.size-heading4xl {
-    font-size: 40px;
-    font-weight: 800;
-    font-style: bold;
+  font-size: 40px;
+  font-weight: 800;
+  font-style: bold;
 
-    @media only screen and (max-width: 1440px) {
-        font-size: 34px;
-    }
+  @media only screen and (max-width: 1440px) {
+    font-size: 34px;
+  }
 
-    @media only screen and (max-width: 1050px) {
-        font-size: 38px;
-    }
+  @media only screen and (max-width: 1050px) {
+    font-size: 38px;
+  }
 
-    @media only screen and (max-width: 550px) {
-        font-size: 36px;
-    }
+  @media only screen and (max-width: 550px) {
+    font-size: 36px;
+  }
 }
 
 .ui.heading.size-heading5xl {
+  font-size: 80px;
+  font-weight: 700;
+
+  @media only screen and (max-width: 1440px) {
     font-size: 80px;
-    font-weight: 700;
+  }
 
-    @media only screen and (max-width: 1440px) {
-        font-size: 80px;
-    }
-
-    @media only screen and (max-width: 1050px) {
-        font-size: 48px;
-    }
+  @media only screen and (max-width: 1050px) {
+    font-size: 48px;
+  }
 }
 
 .ui.heading {
-    color: #465ff1;
-    margin: 0;
+  color: #465ff1;
+  margin: 0;
+
+  font-size: 40px;
+  @media only screen and (max-width: 768px) {
+    font-size: 30px;
+  }
 }
 
 .container-xs {
-    max-width: 1342px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 1342px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+  @media only screen and (max-width: 1020px) {
+    padding: 1.5rem;
+  }
+  
+   @media only screen and (max-width: 768px) {
     padding: 1rem;
-    @media only screen and (max-width: 1020px) {
-        padding: 10px;
-    }
+  }
 }
-   
